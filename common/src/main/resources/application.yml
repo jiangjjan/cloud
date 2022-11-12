@@ -1,10 +1,14 @@
+# 根据springboot 对application加载的顺序定制通用的配置, 具体的服务下不要再使用application.yml
+
 spring:
+  profiles:
+    active: '@spring.profiles.active@'
+  codec:
+    logRequestDetails: true
   servlet:
     multipart:
       max-file-size: 275661011
       max-request-size: 275661011
-  codec:
-    log-request-details: true # 开启request请求参数打印
   task:
     scheduling:
       pool:
@@ -16,7 +20,6 @@ spring:
     hiddenmethod:
       filter:
         enabled: true
-
   jackson:
     time-zone: GMT+8:00
   datasource:
@@ -25,10 +28,7 @@ spring:
       idle-timeout: 60000
       max-lifetime: 120000
       maximum-pool-size: 20
-
-
 server:
-  port: 9999
   servlet:
     encoding:
       force: true
@@ -40,3 +40,32 @@ server:
       min-spare: 100
   compression:
     enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,health-path,scheduledtasks,mappings,metrics,metrics-requiredMetricName
+feign:
+  okhttp:
+    enabled: true
+  compression:
+    request:
+      enabled: true
+      mime-types: ['text/xml', 'application/xml','application/json','text/plain']
+    response:
+      enabled: true
+      useGzipDecoder: true
+
+---
+spring:
+  profiles: dev
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          servlet:
+            mvc:
+              method:
+                annotation:
+                  RequestMappingHandlerMapping: trace

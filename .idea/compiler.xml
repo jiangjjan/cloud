@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="model" />
         <module name="serviceA-domain" />
         <module name="common" />
         <module name="serviceA-model" />
@@ -33,6 +34,7 @@
       <module name="cloud-service-a" options="-parameters" />
       <module name="cloud-service-b" options="-parameters" />
       <module name="common" options="-parameters" />
+      <module name="model" options="-parameters" />
       <module name="sertvice-a-api" options="-parameters" />
       <module name="serviceA-api" options="-parameters" />
       <module name="serviceA-domain" options="-parameters" />

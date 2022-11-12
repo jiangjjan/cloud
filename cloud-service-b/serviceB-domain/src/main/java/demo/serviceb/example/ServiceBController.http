@@ -1,4 +1,10 @@
 ### queryIp
 GET http://localhost:8080/remoteClient
-###
+Content-Type: application/json
+
+### timeTest
 GET http://localhost:8080/queryIp
+
+### timeTest
+GET http://localhost:8080/timeTest
+Content-Type: application/json

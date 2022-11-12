@@ -1,6 +1,10 @@
 package demo.web.config;
 
 import demo.util.DateHelper;
+import org.springframework.boot.autoconfigure.AutoConfigureBefore;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
+import org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.format.FormatterRegistry;
@@ -8,7 +12,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 import java.util.Date;
 
-@Configuration
 public class DateParseConfig implements WebMvcConfigurer {
 
 	/** 用于转换表单参数中的日期 */
