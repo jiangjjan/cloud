@@ -10,5 +10,23 @@ eureka:
 spring:
   application:
     name: eureka-server
+  profiles:
+    active: '@spring.profiles.active@'
+
+
+
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
 server:
-  port: 8781
+  port: 8761
+
+---
+spring:
+  config:
+    activate:
+      on-profile: test
+server:
+  port: 8762

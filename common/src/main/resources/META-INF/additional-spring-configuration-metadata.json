@@ -1,0 +1,19 @@
+{
+  "properties": [
+    {
+      "name": "sms.accessKeyId",
+      "type": "java.lang.String",
+      "description": "阿里云 accessKeyId."
+  },
+    {
+      "name": "sms.accessKeySecret",
+      "type": "java.lang.String",
+      "description": "阿里云 accessKeySecret."
+    },
+
+    {
+      "name": "sms.endpoint",
+      "type": "java.lang.String",
+      "description": "阿里云 endpoint 固定为 dysmsapi.aliyuncs.com."
+    }
+] }

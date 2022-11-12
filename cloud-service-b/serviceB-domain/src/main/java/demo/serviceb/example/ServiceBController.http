@@ -1,0 +1,4 @@
+### queryIp
+GET http://localhost:8080/remoteClient
+###
+GET http://localhost:8080/queryIp

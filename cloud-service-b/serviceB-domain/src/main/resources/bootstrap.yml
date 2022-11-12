@@ -1,0 +1,19 @@
+spring:
+  cloud:
+    nacos: # nacos server在发布到阿里云上时会被自动替换,因此这里直接配置开发的地址即可
+      discovery:
+        server-addr: 10.0.14.131:8848
+        username: nacos
+        password: nacos
+        namespace: jianjiang
+      config:
+        serverAddr: 10.0.14.131:8848
+        username: nacos
+        password: nacos
+        file-extension: yml
+        sharedConfigs: # 公共配置，不会根据profile读取，必须手工指定profile对应的dataId
+          - dataId: audit-center-datasource.yml	# 数据库配置。这个配置只会读取datasource.yml，不会自动读取datasource-dev.yml的配置
+          - dataId: redis.yml		# redis配置
+          - dataId: oss.yml
+          - dataId: rocketMQ.yml
+          - dataId: report.yml

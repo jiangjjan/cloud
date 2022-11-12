@@ -1,0 +1,21 @@
+spring:
+  profiles:
+    active: '@spring.profiles.active@'
+  application:
+    name: serviceB
+  codec:
+    logRequestDetails: true
+remote:
+  test:
+    url: http://localhost:8081
+
+logging:
+  level:
+    org:
+      springframework:
+        web:
+          servlet:
+            mvc:
+              method:
+                annotation:
+                  RequestMappingHandlerMapping: trace

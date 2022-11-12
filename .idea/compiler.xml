@@ -7,17 +7,38 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="serviceA-domain" />
+        <module name="common" />
+        <module name="serviceA-model" />
+        <module name="serviceA-api" />
+        <module name="serviceB-api" />
         <module name="cloud-eureka-server" />
+        <module name="a-serviceApi" />
+        <module name="serviceB-domain" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="a-serviceApi" target="11" />
+      <module name="aserviceApi" target="11" />
       <module name="cloud-server" target="11" />
+      <module name="sertvice-a-api" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="a-serviceApi" options="-parameters" />
+      <module name="aserviceApi" options="-parameters" />
       <module name="cloud-eureka-server" options="-parameters" />
       <module name="cloud-server" options="-parameters" />
+      <module name="cloud-service-a" options="-parameters" />
+      <module name="cloud-service-b" options="-parameters" />
+      <module name="common" options="-parameters" />
+      <module name="sertvice-a-api" options="-parameters" />
+      <module name="serviceA-api" options="-parameters" />
+      <module name="serviceA-domain" options="-parameters" />
+      <module name="serviceA-model" options="-parameters" />
+      <module name="serviceB-api" options="-parameters" />
+      <module name="serviceB-domain" options="-parameters" />
     </option>
   </component>
 </project>
