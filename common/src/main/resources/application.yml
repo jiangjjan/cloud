@@ -1,8 +1,6 @@
 # 根据springboot 对application加载的顺序定制通用的配置, 具体的服务下不要再使用application.yml
 
 spring:
-  profiles:
-    active: '@spring.profiles.active@'
   codec:
     logRequestDetails: true
   servlet:
@@ -22,6 +20,8 @@ spring:
         enabled: true
   jackson:
     time-zone: GMT+8:00
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
   datasource:
     hikari:
       connection-timeout: 30000
@@ -69,3 +69,11 @@ logging:
               method:
                 annotation:
                   RequestMappingHandlerMapping: trace
+#    demo:
+#      serviceb:
+#        remote: debug
+feign:
+  client:
+    config:
+      default:
+        loggerLevel: FULL

@@ -1,6 +1,8 @@
 spring:
   application:
     name: serviceB
+  profiles:
+    active: '@spring.profiles.active@'
   cloud:
     nacos: # nacos server在发布到阿里云上时会被自动替换,因此这里直接配置开发的地址即可
       discovery:
@@ -15,10 +17,8 @@ spring:
         file-extension: yml
         sharedConfigs: # 公共配置，不会根据profile读取，必须手工指定profile对应的dataId
           - dataId: redis.yml		# redis配置
-#          - dataId: webconfig.yml
 remote:
   test:
     url: http://localhost:8081
 server:
   port: 8080
-debug: true

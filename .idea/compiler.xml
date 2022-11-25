@@ -7,13 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="model" />
         <module name="serviceA-domain" />
         <module name="common" />
         <module name="serviceA-model" />
         <module name="serviceA-api" />
-        <module name="serviceB-api" />
         <module name="cloud-eureka-server" />
+        <module name="serviceB-api" />
+        <module name="model" />
         <module name="a-serviceApi" />
         <module name="serviceB-domain" />
       </profile>

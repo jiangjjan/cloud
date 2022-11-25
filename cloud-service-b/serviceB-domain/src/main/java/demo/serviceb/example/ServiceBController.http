@@ -7,4 +7,4 @@ GET http://localhost:8080/queryIp
 
 ### timeTest
 GET http://localhost:8080/timeTest
-Content-Type: application/json
+Content-Type: appli1cation/json
