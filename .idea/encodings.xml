@@ -5,10 +5,16 @@
     <file url="file://$PROJECT_DIR$/cloud-service-a/serviceA-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-a/serviceA-domain/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-a/serviceA-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-service-a/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-service-a/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-b/model/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-b/serviceB-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-service-b/serviceB-domain/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-service-b/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-service-b/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
 </project>

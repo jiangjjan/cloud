@@ -7,14 +7,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="serviceA-domain" />
-        <module name="common" />
         <module name="serviceA-model" />
-        <module name="serviceA-api" />
         <module name="cloud-eureka-server" />
+        <module name="common" />
+        <module name="a-serviceApi" />
+        <module name="serviceA-api" />
         <module name="serviceB-api" />
         <module name="model" />
-        <module name="a-serviceApi" />
+        <module name="serviceA-domain" />
         <module name="serviceB-domain" />
       </profile>
     </annotationProcessing>
@@ -31,8 +31,8 @@
       <module name="aserviceApi" options="-parameters" />
       <module name="cloud-eureka-server" options="-parameters" />
       <module name="cloud-server" options="-parameters" />
-      <module name="cloud-service-a" options="-parameters" />
-      <module name="cloud-service-b" options="-parameters" />
+      <module name="cloud-service-a" options="" />
+      <module name="cloud-service-b" options="" />
       <module name="common" options="-parameters" />
       <module name="model" options="-parameters" />
       <module name="sertvice-a-api" options="-parameters" />
