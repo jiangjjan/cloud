@@ -15,7 +15,7 @@ spring:
     log-request-details: true #debug下打印请求参数
     servlet:
       load-on-startup: 1
-    hiddenmethod:
+    hidden-method:
       filter:
         enabled: true
   jackson:
@@ -40,11 +40,15 @@ server:
       min-spare: 100
   compression:
     enabled: true
+# 暴露监控端点
 management:
   endpoints:
     web:
       exposure:
-        include: health,health-path,scheduledtasks,mappings,metrics,metrics-requiredMetricName
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
 feign:
   okhttp:
     enabled: true

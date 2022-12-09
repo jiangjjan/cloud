@@ -1,6 +1,6 @@
 spring:
   application:
-    name: serviceA
+    name: serviceAdmin
   profiles:
     active: '@spring.profiles.active@'
   cloud:
@@ -19,4 +19,4 @@ spring:
           - dataId: audit-center-datasource.yml	# 数据库配置。这个配置只会读取datasource.yml，不会自动读取datasource-dev.yml的配置
           - dataId: redis.yml		# redis配置
 server:
-  port: 8088
+  port: 9000

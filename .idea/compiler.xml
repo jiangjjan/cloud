@@ -13,6 +13,7 @@
         <module name="a-serviceApi" />
         <module name="serviceA-api" />
         <module name="serviceB-api" />
+        <module name="admin-server" />
         <module name="model" />
         <module name="serviceA-domain" />
         <module name="serviceB-domain" />
@@ -28,6 +29,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="a-serviceApi" options="-parameters" />
+      <module name="admin-server" options="-parameters" />
       <module name="aserviceApi" options="-parameters" />
       <module name="cloud-eureka-server" options="-parameters" />
       <module name="cloud-server" options="-parameters" />
