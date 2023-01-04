@@ -1,3 +1,5 @@
+server:
+  port: 9000
 spring:
   application:
     name: serviceAdmin
@@ -18,5 +20,3 @@ spring:
         sharedConfigs: # 公共配置，不会根据profile读取，必须手工指定profile对应的dataId
           - dataId: audit-center-datasource.yml	# 数据库配置。这个配置只会读取datasource.yml，不会自动读取datasource-dev.yml的配置
           - dataId: redis.yml		# redis配置
-server:
-  port: 9000

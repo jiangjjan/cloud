@@ -12,6 +12,10 @@
     <artifactId>serviceB-domain</artifactId>
     <dependencies>
         <dependency>
+            <groupId>de.codecentric</groupId>
+            <artifactId>spring-boot-admin-starter-client</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.example</groupId>
             <artifactId>serviceA-api</artifactId>
             <version>1.0-SNAPSHOT</version>

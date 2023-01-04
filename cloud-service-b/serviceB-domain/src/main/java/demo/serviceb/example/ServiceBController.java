@@ -46,4 +46,8 @@ public class ServiceBController {
 		return remoteClient.get(2, "appId");
 	}
 
+	public static void main(String[] args) {
+		System.out.println("sss  sss ss   ss ".replaceAll("\\s+",""));
+	}
+
 }
