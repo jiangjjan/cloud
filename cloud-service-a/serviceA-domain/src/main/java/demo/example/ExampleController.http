@@ -4,3 +4,7 @@ GET http://localhost:8088/example/ss
 
 ###
 GET http://localhost:8088/example/test/date?date=2022/10/09
+
+
+###
+GET http://localhost:8088/example/test/strTest/

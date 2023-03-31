@@ -51,7 +51,7 @@ management:
       show-details: always
 feign:
   okhttp:
-    enabled: true
+    enabled: false
   compression:
     request:
       enabled: true

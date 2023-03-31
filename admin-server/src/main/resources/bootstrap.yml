@@ -6,7 +6,7 @@ spring:
   profiles:
     active: '@spring.profiles.active@'
   cloud:
-    nacos: # nacos server在发布到阿里云上时会被自动替换,因此这里直接配置开发的地址即可
+    nacos:
       discovery:
         server-addr: 10.0.14.131:8848
         username: nacos
