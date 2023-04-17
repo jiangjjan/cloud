@@ -41,6 +41,7 @@ public class ExampleController {
 	public Object parseDate(LocalDateReq date) {
 
 		System.out.println(date);
+		date.setNumber("xxxx");
 		return bServiceTestApi.local(date, "asdadad");
 
 	}
