@@ -15,9 +15,6 @@ import org.springframework.cloud.openfeign.support.SpringEncoder;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
-import java.util.HashMap;
-import java.util.Map;
-
 @SpringBootApplication
 @EnableFeignClients(basePackageClasses = {AServiceApi.class, RemoteClient.class, PathologyRemoteApi.class})
 public class ApplicationB {
@@ -32,15 +29,14 @@ public class ApplicationB {
 		ConfigurableApplicationContext run = SpringApplication.run(ApplicationB.class, args);
 		RemoteClient bean = run.getBean(RemoteClient.class);
 
-		Map param = new HashMap();
-		param.put("name", "value");
-		System.out.println("=================================");
-		System.out.println(bean.testForParam(param));
-
 		DataBindEntity p = new DataBindEntity();
 		p.setOrgCode("12345");
+		System.out.println("=================================");
+		System.out.println(bean.webForm(p));
+
+		p.setOrgCode("12345");
 		System.out.println("++++++++++++++");
-		System.out.println(bean.testForParam(p));
+		System.out.println(bean.webJson(p));
 		run.close();
 
 	}
