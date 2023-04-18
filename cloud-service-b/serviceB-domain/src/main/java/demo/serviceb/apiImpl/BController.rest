@@ -1,4 +1,4 @@
-GET http://localhost:8080/demoB/test
+GET http://localhost:8080/demoB/test?aa=asd
 
 ###
 GET http://localhost:8080/demoB/strTest

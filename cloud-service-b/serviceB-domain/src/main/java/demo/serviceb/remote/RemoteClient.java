@@ -1,10 +1,12 @@
 package demo.serviceb.remote;
 
 import demo.serviceB.DateResponse;
+import demo.serviceb.remote.param.DataBindEntity;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.http.MediaType;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.Map;
 
 /**
  * 使用openFegin调用非注册中心的接口
@@ -21,5 +23,11 @@ public interface RemoteClient {
 
 	@GetMapping("compression")
 	String compression();
+
+	@PostMapping(value = "bind/web", consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
+	Object testForParam(@RequestBody Map<String, ?> param);
+
+	@PostMapping(value = "bind/json")
+	Object testForParam(@RequestBody DataBindEntity param);
 }
 
